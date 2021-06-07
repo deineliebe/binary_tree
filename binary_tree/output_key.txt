@@ -1,0 +1,766 @@
+Work 1
+1. Forming binary tree:
+Step 0, element -46:
+Element -46 becomes the root
+Step 1, element 96:
+Element -46 becomes parent of 96, which is added to its right side
+-->-46
+       `-->96
+Step 2, element -41:
+Element -41 less than or equal to -46, so check right element
+Element 96 becomes parent of -41, which is added to its left side
+-->-46
+             .-->-41
+       `-->96
+Step 3, element 73:
+Element 73 less than or equal to -46, so check right element
+Element 73 more than 96, so check left element
+Element -41 becomes parent of 73, which is added to its right side
+-->-46
+             .-->-41
+                    `-->73
+       `-->96
+Step 4, element 84:
+Element 84 less than or equal to -46, so check right element
+Element 84 more than 96, so check left element
+Element 84 less than or equal to -41, so check right element
+Element 73 becomes parent of 84, which is added to its right side
+-->-46
+             .-->-41
+                    `-->73
+                          `-->84
+       `-->96
+Step 5, element -74:
+Element -46 becomes parent of -74, which is added to its left side
+       .-->-74
+-->-46
+             .-->-41
+                    `-->73
+                          `-->84
+       `-->96
+Step 6, element -70:
+Element -70 more than -46, so check left element
+Element -74 becomes parent of -70, which is added to its right side
+       .-->-74
+              `-->-70
+-->-46
+             .-->-41
+                    `-->73
+                          `-->84
+       `-->96
+Step 7, element -100:
+Element -100 more than -46, so check left element
+Element -74 becomes parent of -100, which is added to its left side
+              .-->-100
+       .-->-74
+              `-->-70
+-->-46
+             .-->-41
+                    `-->73
+                          `-->84
+       `-->96
+Step 8, element 53:
+Element 53 less than or equal to -46, so check right element
+Element 53 more than 96, so check left element
+Element 53 less than or equal to -41, so check right element
+Element 73 becomes parent of 53, which is added to its left side
+              .-->-100
+       .-->-74
+              `-->-70
+-->-46
+             .-->-41
+                          .-->53
+                    `-->73
+                          `-->84
+       `-->96
+Step 9, element -61:
+Element -61 more than -46, so check left element
+Element -61 less than or equal to -74, so check right element
+Element -70 becomes parent of -61, which is added to its right side
+              .-->-100
+       .-->-74
+              `-->-70
+                     `-->-61
+-->-46
+             .-->-41
+                          .-->53
+                    `-->73
+                          `-->84
+       `-->96
+2. Adding element -80 to binary tree:
+Element -80 more than -46, so check left element
+Element -80 more than -74, so check left element
+Element -100 becomes parent of -80, which is added to its right side
+              .-->-100
+                      `-->-80
+       .-->-74
+              `-->-70
+                     `-->-61
+-->-46
+             .-->-41
+                          .-->53
+                    `-->73
+                          `-->84
+       `-->96
+3. Deleting element 73 in binary tree:
+Element 73 less than or equal to -46, so check right element
+Element 73 more than 96, so check left element
+Element 73 less than or equal to -41, so check right element
+Element 73 has both nodes, so search the least right element
+It is 84
+              .-->-100
+                      `-->-80
+       .-->-74
+              `-->-70
+                     `-->-61
+-->-46
+             .-->-41
+                          .-->53
+                    `-->84
+       `-->96
+
+Work 2
+1. Forming binary tree:
+Step 0, element 87:
+Element 87 becomes the root
+Step 1, element 69:
+Element 87 becomes parent of 69, which is added to its left side
+      .-->69
+-->87
+2. Adding element -97 to binary tree:
+Element -97 more than 87, so check left element
+Element 69 becomes parent of -97, which is added to its left side
+            .-->-97
+      .-->69
+-->87
+3. Deleting element -97 in binary tree:
+Element -97 more than 87, so check left element
+Element -97 more than 69, so check left element
+Element -97 hasn't got left node  and it is it's parent left node, so give to last one value of temp's right element
+      .-->69
+-->87
+
+Work 3
+1. Forming binary tree:
+Step 0, element 98:
+Element 98 becomes the root
+Step 1, element 86:
+Element 98 becomes parent of 86, which is added to its left side
+      .-->86
+-->98
+Step 2, element -2:
+Element -2 more than 98, so check left element
+Element 86 becomes parent of -2, which is added to its left side
+            .-->-2
+      .-->86
+-->98
+Step 3, element 19:
+Element 19 more than 98, so check left element
+Element 19 more than 86, so check left element
+Element -2 becomes parent of 19, which is added to its right side
+            .-->-2
+                  `-->19
+      .-->86
+-->98
+Step 4, element -80:
+Element -80 more than 98, so check left element
+Element -80 more than 86, so check left element
+Element -2 becomes parent of -80, which is added to its left side
+                  .-->-80
+            .-->-2
+                  `-->19
+      .-->86
+-->98
+Step 5, element -99:
+Element -99 more than 98, so check left element
+Element -99 more than 86, so check left element
+Element -99 more than -2, so check left element
+Element -80 becomes parent of -99, which is added to its left side
+                         .-->-99
+                  .-->-80
+            .-->-2
+                  `-->19
+      .-->86
+-->98
+Step 6, element 16:
+Element 16 more than 98, so check left element
+Element 16 more than 86, so check left element
+Element 16 less than or equal to -2, so check right element
+Element 19 becomes parent of 16, which is added to its left side
+                         .-->-99
+                  .-->-80
+            .-->-2
+                        .-->16
+                  `-->19
+      .-->86
+-->98
+Step 7, element 33:
+Element 33 more than 98, so check left element
+Element 33 more than 86, so check left element
+Element 33 less than or equal to -2, so check right element
+Element 19 becomes parent of 33, which is added to its right side
+                         .-->-99
+                  .-->-80
+            .-->-2
+                        .-->16
+                  `-->19
+                        `-->33
+      .-->86
+-->98
+2. Adding element 29 to binary tree:
+Element 29 more than 98, so check left element
+Element 29 more than 86, so check left element
+Element 29 less than or equal to -2, so check right element
+Element 29 less than or equal to 19, so check right element
+Element 33 becomes parent of 29, which is added to its left side
+                         .-->-99
+                  .-->-80
+            .-->-2
+                        .-->16
+                  `-->19
+                              .-->29
+                        `-->33
+      .-->86
+-->98
+3. Deleting element 33 in binary tree:
+Element 33 more than 98, so check left element
+Element 33 more than 86, so check left element
+Element 33 less than or equal to -2, so check right element
+Element 33 less than or equal to 19, so check right element
+Element 33 hasn't got right node  and it is it's parent right node, so give to last one value of temp's left element
+                         .-->-99
+                  .-->-80
+            .-->-2
+                        .-->16
+                  `-->19
+                        `-->29
+      .-->86
+-->98
+
+Work 4
+1. Forming binary tree:
+Step 0, element -14:
+Element -14 becomes the root
+Step 1, element 38:
+Element -14 becomes parent of 38, which is added to its right side
+-->-14
+       `-->38
+Step 2, element 22:
+Element 22 less than or equal to -14, so check right element
+Element 38 becomes parent of 22, which is added to its left side
+-->-14
+             .-->22
+       `-->38
+Step 3, element -62:
+Element -14 becomes parent of -62, which is added to its left side
+       .-->-62
+-->-14
+             .-->22
+       `-->38
+Step 4, element -77:
+Element -77 more than -14, so check left element
+Element -62 becomes parent of -77, which is added to its left side
+              .-->-77
+       .-->-62
+-->-14
+             .-->22
+       `-->38
+2. Adding element -18 to binary tree:
+Element -18 more than -14, so check left element
+Element -62 becomes parent of -18, which is added to its right side
+              .-->-77
+       .-->-62
+              `-->-18
+-->-14
+             .-->22
+       `-->38
+3. Deleting element -62 in binary tree:
+Element -62 more than -14, so check left element
+Element -62 has both nodes, so search the least right element
+It is -18
+              .-->-77
+       .-->-18
+-->-14
+             .-->22
+       `-->38
+
+Work 5
+1. Forming binary tree:
+Step 0, element 0:
+Element 0 becomes the root
+Step 1, element 14:
+Element 0 becomes parent of 14, which is added to its right side
+-->0
+    `-->14
+Step 2, element -66:
+Element 0 becomes parent of -66, which is added to its left side
+    .-->-66
+-->0
+    `-->14
+Step 3, element 35:
+Element 35 less than or equal to 0, so check right element
+Element 14 becomes parent of 35, which is added to its right side
+    .-->-66
+-->0
+    `-->14
+          `-->35
+Step 4, element 60:
+Element 60 less than or equal to 0, so check right element
+Element 60 less than or equal to 14, so check right element
+Element 35 becomes parent of 60, which is added to its right side
+    .-->-66
+-->0
+    `-->14
+          `-->35
+                `-->60
+Step 5, element -50:
+Element -50 more than 0, so check left element
+Element -66 becomes parent of -50, which is added to its right side
+    .-->-66
+           `-->-50
+-->0
+    `-->14
+          `-->35
+                `-->60
+2. Adding element 84 to binary tree:
+Element 84 less than or equal to 0, so check right element
+Element 84 less than or equal to 14, so check right element
+Element 84 less than or equal to 35, so check right element
+Element 60 becomes parent of 84, which is added to its right side
+    .-->-66
+           `-->-50
+-->0
+    `-->14
+          `-->35
+                `-->60
+                      `-->84
+3. Deleting element 84 in binary tree:
+Element 84 less than or equal to 0, so check right element
+Element 84 less than or equal to 14, so check right element
+Element 84 less than or equal to 35, so check right element
+Element 84 less than or equal to 60, so check right element
+Element 84 hasn't got left node  and it is it's parent right node, so give to last one value of temp's right element
+    .-->-66
+           `-->-50
+-->0
+    `-->14
+          `-->35
+                `-->60
+
+Work 6
+1. Forming binary tree:
+Step 0, element 66:
+Element 66 becomes the root
+Step 1, element -99:
+Element 66 becomes parent of -99, which is added to its left side
+      .-->-99
+-->66
+Step 2, element -69:
+Element -69 more than 66, so check left element
+Element -99 becomes parent of -69, which is added to its right side
+      .-->-99
+             `-->-69
+-->66
+Step 3, element -83:
+Element -83 more than 66, so check left element
+Element -83 less than or equal to -99, so check right element
+Element -69 becomes parent of -83, which is added to its left side
+      .-->-99
+                    .-->-83
+             `-->-69
+-->66
+Step 4, element 32:
+Element 32 more than 66, so check left element
+Element 32 less than or equal to -99, so check right element
+Element -69 becomes parent of 32, which is added to its right side
+      .-->-99
+                    .-->-83
+             `-->-69
+                    `-->32
+-->66
+Step 5, element 10:
+Element 10 more than 66, so check left element
+Element 10 less than or equal to -99, so check right element
+Element 10 less than or equal to -69, so check right element
+Element 32 becomes parent of 10, which is added to its left side
+      .-->-99
+                    .-->-83
+             `-->-69
+                          .-->10
+                    `-->32
+-->66
+Step 6, element 38:
+Element 38 more than 66, so check left element
+Element 38 less than or equal to -99, so check right element
+Element 38 less than or equal to -69, so check right element
+Element 32 becomes parent of 38, which is added to its right side
+      .-->-99
+                    .-->-83
+             `-->-69
+                          .-->10
+                    `-->32
+                          `-->38
+-->66
+2. Adding element -35 to binary tree:
+Element -35 more than 66, so check left element
+Element -35 less than or equal to -99, so check right element
+Element -35 less than or equal to -69, so check right element
+Element -35 more than 32, so check left element
+Element 10 becomes parent of -35, which is added to its left side
+      .-->-99
+                    .-->-83
+             `-->-69
+                                .-->-35
+                          .-->10
+                    `-->32
+                          `-->38
+-->66
+3. Deleting element 10 in binary tree:
+Element 10 more than 66, so check left element
+Element 10 less than or equal to -99, so check right element
+Element 10 less than or equal to -69, so check right element
+Element 10 more than 32, so check left element
+Element 10 hasn't got right node  and it is it's parent left node, so give to last one value of temp's left element
+      .-->-99
+                    .-->-83
+             `-->-69
+                          .-->-35
+                    `-->32
+                          `-->38
+-->66
+
+Work 7
+1. Forming binary tree:
+Step 0, element -99:
+Element -99 becomes the root
+Step 1, element 43:
+Element -99 becomes parent of 43, which is added to its right side
+-->-99
+       `-->43
+Step 2, element 55:
+Element 55 less than or equal to -99, so check right element
+Element 43 becomes parent of 55, which is added to its right side
+-->-99
+       `-->43
+             `-->55
+Step 3, element -47:
+Element -47 less than or equal to -99, so check right element
+Element 43 becomes parent of -47, which is added to its left side
+-->-99
+             .-->-47
+       `-->43
+             `-->55
+Step 4, element -59:
+Element -59 less than or equal to -99, so check right element
+Element -59 more than 43, so check left element
+Element -47 becomes parent of -59, which is added to its left side
+-->-99
+                    .-->-59
+             .-->-47
+       `-->43
+             `-->55
+Step 5, element -24:
+Element -24 less than or equal to -99, so check right element
+Element -24 more than 43, so check left element
+Element -47 becomes parent of -24, which is added to its right side
+-->-99
+                    .-->-59
+             .-->-47
+                    `-->-24
+       `-->43
+             `-->55
+Step 6, element 14:
+Element 14 less than or equal to -99, so check right element
+Element 14 more than 43, so check left element
+Element 14 less than or equal to -47, so check right element
+Element -24 becomes parent of 14, which is added to its right side
+-->-99
+                    .-->-59
+             .-->-47
+                    `-->-24
+                           `-->14
+       `-->43
+             `-->55
+Step 7, element -34:
+Element -34 less than or equal to -99, so check right element
+Element -34 more than 43, so check left element
+Element -34 less than or equal to -47, so check right element
+Element -24 becomes parent of -34, which is added to its left side
+-->-99
+                    .-->-59
+             .-->-47
+                           .-->-34
+                    `-->-24
+                           `-->14
+       `-->43
+             `-->55
+Step 8, element 97:
+Element 97 less than or equal to -99, so check right element
+Element 97 less than or equal to 43, so check right element
+Element 55 becomes parent of 97, which is added to its right side
+-->-99
+                    .-->-59
+             .-->-47
+                           .-->-34
+                    `-->-24
+                           `-->14
+       `-->43
+             `-->55
+                   `-->97
+2. Adding element -39 to binary tree:
+Element -39 less than or equal to -99, so check right element
+Element -39 more than 43, so check left element
+Element -39 less than or equal to -47, so check right element
+Element -39 more than -24, so check left element
+Element -34 becomes parent of -39, which is added to its left side
+-->-99
+                    .-->-59
+             .-->-47
+                                  .-->-39
+                           .-->-34
+                    `-->-24
+                           `-->14
+       `-->43
+             `-->55
+                   `-->97
+3. Deleting element -34 in binary tree:
+Element -34 less than or equal to -99, so check right element
+Element -34 more than 43, so check left element
+Element -34 less than or equal to -47, so check right element
+Element -34 more than -24, so check left element
+Element -34 hasn't got right node  and it is it's parent left node, so give to last one value of temp's left element
+-->-99
+                    .-->-59
+             .-->-47
+                           .-->-39
+                    `-->-24
+                           `-->14
+       `-->43
+             `-->55
+                   `-->97
+
+Work 8
+1. Forming binary tree:
+Step 0, element -81:
+Element -81 becomes the root
+Step 1, element -91:
+Element -81 becomes parent of -91, which is added to its left side
+       .-->-91
+-->-81
+Step 2, element 23:
+Element -81 becomes parent of 23, which is added to its right side
+       .-->-91
+-->-81
+       `-->23
+Step 3, element 51:
+Element 51 less than or equal to -81, so check right element
+Element 23 becomes parent of 51, which is added to its right side
+       .-->-91
+-->-81
+       `-->23
+             `-->51
+2. Adding element -38 to binary tree:
+Element -38 less than or equal to -81, so check right element
+Element 23 becomes parent of -38, which is added to its left side
+       .-->-91
+-->-81
+             .-->-38
+       `-->23
+             `-->51
+3. Deleting element -91 in binary tree:
+Element -91 more than -81, so check left element
+Element -91 hasn't got left node  and it is it's parent left node, so give to last one value of temp's right element
+-->-81
+             .-->-38
+       `-->23
+             `-->51
+
+Work 9
+1. Forming binary tree:
+Step 0, element 38:
+Element 38 becomes the root
+Step 1, element -63:
+Element 38 becomes parent of -63, which is added to its left side
+      .-->-63
+-->38
+Step 2, element -76:
+Element -76 more than 38, so check left element
+Element -63 becomes parent of -76, which is added to its left side
+             .-->-76
+      .-->-63
+-->38
+Step 3, element -50:
+Element -50 more than 38, so check left element
+Element -63 becomes parent of -50, which is added to its right side
+             .-->-76
+      .-->-63
+             `-->-50
+-->38
+Step 4, element 72:
+Element 38 becomes parent of 72, which is added to its right side
+             .-->-76
+      .-->-63
+             `-->-50
+-->38
+      `-->72
+Step 5, element -16:
+Element -16 more than 38, so check left element
+Element -16 less than or equal to -63, so check right element
+Element -50 becomes parent of -16, which is added to its right side
+             .-->-76
+      .-->-63
+             `-->-50
+                    `-->-16
+-->38
+      `-->72
+Step 6, element -97:
+Element -97 more than 38, so check left element
+Element -97 more than -63, so check left element
+Element -76 becomes parent of -97, which is added to its left side
+                    .-->-97
+             .-->-76
+      .-->-63
+             `-->-50
+                    `-->-16
+-->38
+      `-->72
+Step 7, element 2:
+Element 2 more than 38, so check left element
+Element 2 less than or equal to -63, so check right element
+Element 2 less than or equal to -50, so check right element
+Element -16 becomes parent of 2, which is added to its right side
+                    .-->-97
+             .-->-76
+      .-->-63
+             `-->-50
+                    `-->-16
+                           `-->2
+-->38
+      `-->72
+Step 8, element -44:
+Element -44 more than 38, so check left element
+Element -44 less than or equal to -63, so check right element
+Element -44 less than or equal to -50, so check right element
+Element -16 becomes parent of -44, which is added to its left side
+                    .-->-97
+             .-->-76
+      .-->-63
+             `-->-50
+                           .-->-44
+                    `-->-16
+                           `-->2
+-->38
+      `-->72
+Step 9, element -66:
+Element -66 more than 38, so check left element
+Element -66 more than -63, so check left element
+Element -76 becomes parent of -66, which is added to its right side
+                    .-->-97
+             .-->-76
+                    `-->-66
+      .-->-63
+             `-->-50
+                           .-->-44
+                    `-->-16
+                           `-->2
+-->38
+      `-->72
+2. Adding element -24 to binary tree:
+Element -24 more than 38, so check left element
+Element -24 less than or equal to -63, so check right element
+Element -24 less than or equal to -50, so check right element
+Element -24 more than -16, so check left element
+Element -44 becomes parent of -24, which is added to its right side
+                    .-->-97
+             .-->-76
+                    `-->-66
+      .-->-63
+             `-->-50
+                           .-->-44
+                                  `-->-24
+                    `-->-16
+                           `-->2
+-->38
+      `-->72
+3. Deleting element -76 in binary tree:
+Element -76 more than 38, so check left element
+Element -76 more than -63, so check left element
+Element -76 has both nodes, so search the least right element
+It is -66
+                    .-->-97
+             .-->-66
+      .-->-63
+             `-->-50
+                           .-->-44
+                                  `-->-24
+                    `-->-16
+                           `-->2
+-->38
+      `-->72
+
+Work 10
+1. Forming binary tree:
+Step 0, element 71:
+Element 71 becomes the root
+Step 1, element 39:
+Element 71 becomes parent of 39, which is added to its left side
+      .-->39
+-->71
+Step 2, element -51:
+Element -51 more than 71, so check left element
+Element 39 becomes parent of -51, which is added to its left side
+            .-->-51
+      .-->39
+-->71
+Step 3, element 83:
+Element 71 becomes parent of 83, which is added to its right side
+            .-->-51
+      .-->39
+-->71
+      `-->83
+Step 4, element -61:
+Element -61 more than 71, so check left element
+Element -61 more than 39, so check left element
+Element -51 becomes parent of -61, which is added to its left side
+                   .-->-61
+            .-->-51
+      .-->39
+-->71
+      `-->83
+Step 5, element -73:
+Element -73 more than 71, so check left element
+Element -73 more than 39, so check left element
+Element -73 more than -51, so check left element
+Element -61 becomes parent of -73, which is added to its left side
+                          .-->-73
+                   .-->-61
+            .-->-51
+      .-->39
+-->71
+      `-->83
+2. Adding element -96 to binary tree:
+Element -96 more than 71, so check left element
+Element -96 more than 39, so check left element
+Element -96 more than -51, so check left element
+Element -96 more than -61, so check left element
+Element -73 becomes parent of -96, which is added to its left side
+                                 .-->-96
+                          .-->-73
+                   .-->-61
+            .-->-51
+      .-->39
+-->71
+      `-->83
+3. Deleting element -73 in binary tree:
+Element -73 more than 71, so check left element
+Element -73 more than 39, so check left element
+Element -73 more than -51, so check left element
+Element -73 more than -61, so check left element
+Element -73 hasn't got right node  and it is it's parent left node, so give to last one value of temp's left element
+                          .-->-96
+                   .-->-61
+            .-->-51
+      .-->39
+-->71
+      `-->83
+
